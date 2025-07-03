@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blockchain DApp</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        button { padding: 10px 20px; margin: 10px 0; cursor: pointer; }
+        #status { margin-top: 20px; font-weight: bold; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>Kontrak Lock Saya</h1>
+    <button id="connectButton">Connect MetaMask</button>
+    <p>Connected Account: <span id="accountAddress">Not connected</span></p>
+    <button id="getUnlockTimeButton">Get Unlock Time</button>
+    <p>Unlock Time: <span id="unlockTimeDisplay">Loading...</span></p>
+
+    <div id="status"></div>
+
+    <script src="./script.js"></script>
+    <script src="./node_modules/ethers/dist/ethers.umd.min.js"></script> </body>
+</html>
